@@ -28,8 +28,8 @@
             width: 100%;
             height: 100%;
         }
-		
-		.logo-container {
+
+        .logo-container {
             background-color: white;
             padding: 10px;
             border-radius: 10%;
@@ -39,19 +39,29 @@
             left: 20px;
             z-index: 1000;
         }
+
+        .text-overlay {
+            position: absolute;
+            top: 100px;
+            left: 40%;
+            transform: translateX(-40%);
+            font-size: 50px;
+            color: white;
+			z-index: 1000;
+			font-family: 'Calibri', sans-serif; /* Use Calibri font */
+        }
     </style>
 </head>
 
 <body>
-	<div class="logo-container muted">
+    <div class="text-overlay">Helaas zoek verder op ons HK!!!!</div>
+    <div class="logo-container muted">
         <!-- Replace 'YOUR_LOGO_URL' with the actual URL of your PNG logo -->
         <img src="logo.png" alt="Logo">
     </div>
     <div id="video-container">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=i74hU8SBHsCkgpr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <video controls autoplay muted name="media"><source src="https://ia801509.us.archive.org/10/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4"></video>
     </div>
 </body>
 
-
 </html>
-
